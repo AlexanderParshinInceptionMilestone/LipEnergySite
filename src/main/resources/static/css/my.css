@@ -1,0 +1,13 @@
+@font-face{
+       font-family: Oswald-Bold;
+       src: url('/fonts/Oswald-Bold.ttf');
+}
+@font-face{
+       font-family: Oswald-Light;
+       src: url('/fonts/Oswald-Light.ttf');
+}
+
+.active {
+  background-color: #666;
+  color: white;
+}

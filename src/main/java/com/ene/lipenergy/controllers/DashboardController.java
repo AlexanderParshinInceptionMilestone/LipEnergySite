@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class DashboardController {
 
     @GetMapping("/dashboard")
-    public String home(Model model) {
+    public String dashboard(Model model) {
         model.addAttribute("title", "Главная страница");
         return "dashboard";
     }
