@@ -7,7 +7,33 @@
        src: url('/fonts/Oswald-Light.ttf');
 }
 
-.active {
+.header-active {
   background-color: #666;
   color: white;
+}
+
+.list-group{
+    max-height: 470px;
+    margin-bottom: 10px;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+::-webkit-scrollbar {
+  width: 23px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #666666;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #212529;
 }
