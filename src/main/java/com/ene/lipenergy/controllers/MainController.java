@@ -15,8 +15,8 @@ public class MainController {
         return "home";
     }
 
-    @RequestMapping(value="/do-stuff")
+    @RequestMapping(value="/dashboard")
     public String doStuffMethod() {
-        return "home";
+        return "dashboard";
     }
 }

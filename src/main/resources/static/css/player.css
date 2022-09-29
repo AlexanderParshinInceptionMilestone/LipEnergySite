@@ -1,0 +1,28 @@
+html{background:black}
+-webkit-@keyframes equalizr {
+0%, 100% {transform: scaleY(0.5);}
+50% {transform: scaleY(1);}
+}
+@keyframes equalizr {
+0%, 100% {transform: scaleY(0.5);}
+50% {transform: scaleY(1);}
+}
+rect[id^="w"]{
+  fill:#e67100;
+  transform-origin:bottom;
+  animation-delay: 0s;
+  animation-direction: normal;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-name: equalizr;
+  animation-timing-function: easy;
+
+  -webkit-transform-origin:bottom;
+  -webkit-animation-delay: 0s;
+  -webkit-animation-direction: normal;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-name: equalizr;
+  -webkit-animation-timing-function: easy;
+}
+div{width:80%; margin:auto;}
