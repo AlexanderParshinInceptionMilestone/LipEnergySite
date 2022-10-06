@@ -1,19 +1,25 @@
 <div th:fragment="header">
-    <header style="font-family: Oswald-Bold; font-size: 24px;" class="p-3 bg-dark text-white">
-        <div class="container-fluid" id="header">
-            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-                <a style="width: 200px; height:200px;" class="navbar-brand" href="#"><img style="width: 200px; height:200px;" img th:src="@{/img/radio_logo.png}" alt="Logo" draggable="false" height="30"></a>
-                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+    <header style="font-family: Oswald-Medium; font-size: 26px;" class="p-3 bg-dark text-white py-2 px-0">
+        <div class="container-fluid px-3" id="header">
+            <div class="d-flex flex-wrap align-items-center justify-content-center">
+                <a style="width: 200px; height:200px;" class="navbar-brand" href="/"><img
+                        style="width: 200px; height:200px;" img th:src="@{/img/radio_logo_9.png}" alt="Logo"
+                        draggable="false" height="30"></a>
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 mx-4">
                     <li><a href="/" class="nav-link px-2 text-white header-active">Home</a></li>
-                    <li><a href="/dashboard" class="nav-link px-2 text-white" >Dashboard</a></li>
+                    <li><a href="/dashboard" class="nav-link px-2 text-white">Dashboard</a></li>
                     <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
                     <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDarkDropdownMenuLink"
+                           role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Broadcast
                         </a>
-                        <ul style="font-family: Oswald-Light;" class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                            <li><button class="dropdown-item" onclick="playAudio()">Blues</button></li>
+                        <ul style="font-family: Oswald-Light;" class="dropdown-menu dropdown-menu-dark"
+                            aria-labelledby="navbarDarkDropdownMenuLink">
+                            <li>
+                                <button class="dropdown-item" onclick="playAudio()">Blues</button>
+                            </li>
                             <li><a class="dropdown-item" href="#">Jazz</a></li>
                             <li><a class="dropdown-item" href="#">Rock</a></li>
                         </ul>
