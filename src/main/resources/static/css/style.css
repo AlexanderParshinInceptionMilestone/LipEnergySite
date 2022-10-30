@@ -61,7 +61,6 @@
 #player_container {
     width: 200px;
     height: 200px;
-    position: relative;
   }
 
 #player_layout{
@@ -69,7 +68,6 @@
     height: 180px;
     background: linear-gradient(0.50turn, #f8ca8c, #d7625a, #f8ca8c);
     border-radius: 50%;
-    position: absolute;
 }
 
 #player_control{
@@ -111,11 +109,5 @@
 .vz-wrapper { box-shadow: inset 0 0 200px 60px #000; }
 }
 
-.panel-default {
-background:yellow;
-}}
 
-#wave {
-width: 100%;
-height: 100%;
-}
+

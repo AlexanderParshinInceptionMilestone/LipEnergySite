@@ -1,19 +1,15 @@
 <div th:fragment="player">
-    <div class="container-fluid rounded-3">
-        <div id="player_container" class="d-flex align-items-center justify-content-center">
+        <div class="d-flex align-items-center justify-content-center">
             <div id="player_layout">
-                <div>
-                    <audio id="player" preload="none" src=""/>
-                </div>
+                <audio id="player" preload="none" src=""/>
             </div>
             <div id="player_control" class="d-flex align-items-center justify-content-center">
                 <i class="fa-solid fa-backward fa-2x m-3" id="backward_button"></i>
                 <i class="fa-solid fa-play fa-5x" id="play_button"></i>
                 <i class="fa-solid fa-forward fa-2x m-3" id="forward_button"></i>
             </div>
-            <div id="volume_control">
-                <input type="range" min="0" max="100" step="1" onchange="setVolume(this.value)" />
+            <div id="volume_control" class="mt-2">
+                <input type="range" min="0" max="100" step="1" onchange="setVolume(this.value)"/>
             </div>
         </div>
-    </div>
 </div>
